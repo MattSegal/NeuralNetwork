@@ -1,0 +1,10 @@
+# tells git what files to ignore
+*~
+*.swp
+*.pyc
+venv
+node_modules
+gulpfile.js
+open_here.ps1
+*.jpg
+package.json
