@@ -10,22 +10,22 @@ This module was originally written to assit in attempting the first assignment o
 The network may be composed of several types of layer: 
 
 * Linear
-** fits linear regression to input
-** cannot fit non-linear models
+    * fits linear regression to input
+    * cannot fit non-linear models
 * Softplus
-** non-linear regression unit
+    * non-linear regression unit
 * Rectified Linear (ReLu)
-** discontinuous approximation of softplus
-** supposed to be computationally cheaper
+    * discontinuous approximation of softplus
+    * supposed to be computationally cheaper
 * Logistic
-** fits data to range between 0 and 1
-** useful for estimating probabilities
+    * fits data to range between 0 and 1
+    * useful for estimating probabilities
 * Tanh
-** logistic unit scaled between -1 and 1
-** supposedly trains faster than the logistic unit
+    * logistic unit scaled between -1 and 1
+    * supposedly trains faster than the logistic unit
 * Softmax
-** generalised case of logistic units
-** useful for guessing probabilities across multiple classes
+    * generalised case of logistic units
+    * useful for guessing probabilities across multiple classes
 
 The parallel layer was created in an attempt to support alternate network architectures that were not fully connected. I think this kind of layer leads to leakiness in the module's abstractions. For this kind of different architecture a node based model may make more sense.
 
